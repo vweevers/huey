@@ -35,7 +35,7 @@
 				Huey(url, function(color) {
 					var isGreyscale = !color
 					color = color || [128,128,128]
-					var total = +color[0] + +color[1] + +color[2]
+					var total = color[0] + color[1] + color[2]
 					var end = new Date()
 					var time = (end.getTime() - start.getTime())
 					body.style.cssText = "background-color: " + "rgb(" + color + "); background-image: url(" + url + ")"
